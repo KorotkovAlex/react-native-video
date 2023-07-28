@@ -722,6 +722,7 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
             self.addSubview(_playerViewController.view)
         }
 
+        _playerViewController.allowsPictureInPicturePlayback = _pip
         _playerObserver.playerViewController = _playerViewController
     }
 
